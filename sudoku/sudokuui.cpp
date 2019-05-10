@@ -153,8 +153,8 @@ void sudokuUI::on_startSolving_clicked()
         dfs stochasticAlg;
         stochasticAlg.solve(puzzleMatrix);
 
-        double time2 = stochasticAlg.getUsedTime();
-        double mem2 = stochasticAlg.getUsedMemory();
+        int time2 = (int)stochasticAlg.getUsedTime();
+        int mem2 = (int)stochasticAlg.getUsedMemory();
 
         ui->label_sT->setNum(time2);
         ui->label_sM->setNum(mem2);
